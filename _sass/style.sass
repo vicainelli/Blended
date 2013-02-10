@@ -1,2 +1,24 @@
 // Import blanded mixins library
 @import src/blended
+// Import basic reset
+@import reset
+
+.header
+	width: 100%
+	padding: 40px 0 40px 15px
+	@include linear-gradient (#356aa0, #5085bb)
+	@include border-radius (0 0 10px 10px)
+	@include box-sizing (border-box)
+
+	h1
+		color: #FFF
+		font:
+			size: 60px
+			weight: bold
+		text-shadow: 4px 3px 4px #000
+		small
+			text-shadow: none
+			display: block
+			font: 
+				size: 30px
+				weight: normal
