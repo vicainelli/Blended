@@ -1,8 +1,22 @@
 // Linear gradient
-
 @mixin linear-gradient ($ColorStart, $ColorFinish)
 	background-image: -webkit-linear-gradient(bottom, $ColorStart, $ColorFinish)
 	background-image: -moz-linear-gradient(bottom, $ColorStart, $ColorFinish)
 	background-image: -o-linear-gradient(bottom, $ColorStart, $ColorFinish)
 	background-image: -ms-linear-gradient(bottom, $ColorStart, $ColorFinish)
 	background-image: linear-gradient(to top, $ColorStart, $ColorFinish)
+
+
+
+// Border Radius
+@mixin border-radius ($ValueBD)
+	-webkit-border-radius: $ValueBD
+	-moz-border-radius: $ValueBD
+	border-radius: $ValueBD
+
+
+// Box sizing
+@mixin box-sizing ($ValueBZ)
+	-webkit-box-sizing: $ValueBZ
+	-moz-box-sizing: $ValueBZ
+	box-sizing: $ValueBZ
