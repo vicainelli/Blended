@@ -7,13 +7,47 @@
 	background-image: linear-gradient(to top, $ColorStart, $ColorFinish)
 
 // Border Radius
-@mixin border-radius ($ValueBD)
-	-webkit-border-radius: $ValueBD
-	-moz-border-radius: $ValueBD
-	border-radius: $ValueBD
+@mixin border-radius ($ValueBdRadius)
+	-webkit-border-radius: $ValueBdRadius
+	-moz-border-radius: $ValueBdRadius
+	border-radius: $ValueBdRadius
+
+// Border Radius Separate
+@mixin border-radius-sep ($BorderTL: 4px, $BorderTR: 4px, $BorderBL: 4px, $BorderBR: 4px)
+	-webkit-border-top-left-radius: $BorderTL
+	-moz-border-top-left-radius: $BorderTL
+	border-top-left-radius: $BorderTL
+
+	-webkit-border-top-right-radius: $BorderTR
+	-moz-border-top-right-radius: $BorderTR
+	border-top-right-radius: $BorderTR
+
+	-webkit-border-bottom-left-radius: $BorderBL
+	-moz-border-bottom-left-radius: $BorderBL
+	border-bottom-left-radius: $BorderBL
+
+	-webkit-border-bottom-left-radius: $BorderBL
+	-moz-border-bottom-left-radius: $BorderBL
+	border-bottom-left-radius: $BorderBL
+
+
 
 // Box sizing
-@mixin box-sizing ($ValueBZ)
-	-webkit-box-sizing: $ValueBZ
-	-moz-box-sizing: $ValueBZ
-	box-sizing: $ValueBZ
+@mixin box-sizing ($ValueBSz)
+	-webkit-box-sizing: $ValueBSz
+	-moz-box-sizing: $ValueBSz
+	box-sizing: $ValueBSz
+
+
+// Box shadow
+@mixin box-shadow ($ValueSD)
+	-webkit-box-shadow: $ValueSD
+	-moz-box-shadow: $ValueSD
+	box-shadow: $ValueSD
+
+// Appearance
+@mixin appearance ($ValueAP)
+	-webkit-appearance: $ValueAP
+	-moz-appearance: $ValueAP
+	appearance: $ValueAP
+
