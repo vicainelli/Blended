@@ -2,23 +2,33 @@
 @import src/blended
 // Import basic reset
 @import reset
+.wrap
+	width: 960px
+	margin: 0 auto
 
 .header
 	width: 100%
-	padding: 40px 0 40px 15px
+	padding: 20px 0
+	background: #356aa0
 	@include linear-gradient (#356aa0, #5085bb)
-	@include border-radius (0 0 10px 10px)
 	@include box-sizing (border-box)
 
-	h1
-		color: #FFF
-		font:
-			size: 60px
-			weight: bold
-		text-shadow: 4px 3px 4px #000
-		small
-			text-shadow: none
-			display: block
-			font: 
-				size: 30px
-				weight: normal
+	$Box-Shadow: 0px 2px 5px #777
+	@include box-shadow ($Box-Shadow)
+
+.head1
+	color: #FFF
+	font:
+		size: 60px
+		weight: bold
+	text-shadow: 3px 2px 6px #222
+	small
+		display: block
+		margin-top: 10px
+		text-shadow: none
+		font: 
+			size: 26px
+			weight: normal
+
+.pink
+	color: #eb85f4
