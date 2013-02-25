@@ -10,6 +10,8 @@
 @mixin border-radius ($ValueBdRadius)
 	-webkit-border-radius: $ValueBdRadius
 	-moz-border-radius: $ValueBdRadius
+	-ms-border-radius: $ValueBdRadius
+	-o-border-radius: $ValueBdRadius
 	border-radius: $ValueBdRadius
 
 // Border Radius Separate
@@ -51,3 +53,23 @@
 	-moz-appearance: $ValueAP
 	appearance: $ValueAP
 
+
+// Fonts
+// =============================
+
+// Font complete
+@mixin font-c ($Ffamily, $Fsize, $Fstyle, $Fvariant, $Fweight, $Fcolor)
+	font:
+		family: $Ffamily
+		size: $Fsize
+		style: $Fstyle
+		variant: $Fvariant
+		weight: $Fweight
+	color: $Fcolor
+
+// Font basic
+@mixin font-b ($Fsize, $Fweight, $Fcolor)
+	font: 
+		size: $Fsize
+		weight: $Fweight
+	color: $Fcolor
