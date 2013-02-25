@@ -1,10 +1,16 @@
 // Linear gradient
 @mixin linear-gradient ($ColorStart, $ColorFinish)
-	background-image: -webkit-linear-gradient(bottom, $ColorStart, $ColorFinish)
-	background-image: -moz-linear-gradient(bottom, $ColorStart, $ColorFinish)
-	background-image: -o-linear-gradient(bottom, $ColorStart, $ColorFinish)
-	background-image: -ms-linear-gradient(bottom, $ColorStart, $ColorFinish)
-	background-image: linear-gradient(to top, $ColorStart, $ColorFinish)
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$ColorStart", endColorstr="$ColorFinish");
+  background-image: -khtml-gradient(linear, left top, left bottom, from($ColorStart), to($ColorFinish));
+  background-image: -moz-linear-gradient(top, $ColorStart, $ColorFinish);
+  background-image: -ms-linear-gradient(top, $ColorStart, $ColorFinish);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $ColorStart), color-stop(100%, $ColorFinish));
+  background-image: -webkit-linear-gradient(top, $ColorStart, $ColorFinish);
+  background-image: -o-linear-gradient(top, $ColorStart, $ColorFinish);
+  background-image: linear-gradient($ColorStart, $ColorFinish);
+
+
 
 // Border Radius
 @mixin border-radius ($ValueBdRadius)
