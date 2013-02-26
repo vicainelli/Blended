@@ -1,14 +1,14 @@
 // Linear gradient
 @mixin linear-gradient ($ColorStart, $ColorFinish)
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$ColorStart", endColorstr="$ColorFinish");
-  background-image: -khtml-gradient(linear, left top, left bottom, from($ColorStart), to($ColorFinish));
-  background-image: -moz-linear-gradient(top, $ColorStart, $ColorFinish);
-  background-image: -ms-linear-gradient(top, $ColorStart, $ColorFinish);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $ColorStart), color-stop(100%, $ColorFinish));
-  background-image: -webkit-linear-gradient(top, $ColorStart, $ColorFinish);
-  background-image: -o-linear-gradient(top, $ColorStart, $ColorFinish);
-  background-image: linear-gradient($ColorStart, $ColorFinish);
+	background-repeat: repeat-x
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$ColorStart", endColorstr="$ColorFinish")
+	background-image: -khtml-gradient(linear, left top, left bottom, from($ColorStart), to($ColorFinish))
+	background-image: -moz-linear-gradient(top, $ColorStart, $ColorFinish)
+	background-image: -ms-linear-gradient(top, $ColorStart, $ColorFinish)
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $ColorStart), color-stop(100%, $ColorFinish))
+	background-image: -webkit-linear-gradient(top, $ColorStart, $ColorFinish)
+	background-image: -o-linear-gradient(top, $ColorStart, $ColorFinish)
+	background-image: linear-gradient($ColorStart, $ColorFinish)
 
 
 
@@ -34,9 +34,9 @@
 	-moz-border-bottom-left-radius: $BorderBL
 	border-bottom-left-radius: $BorderBL
 
-	-webkit-border-bottom-left-radius: $BorderBL
-	-moz-border-bottom-left-radius: $BorderBL
-	border-bottom-left-radius: $BorderBL
+	-webkit-border-bottom-right-radius: $BorderBR
+	-moz-border-bottom-right-radius: $BorderBR
+	border-bottom-right-radius: $BorderBR
 
 
 
