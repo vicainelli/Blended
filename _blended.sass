@@ -1,0 +1,81 @@
+// Linear gradient
+@mixin linear-gradient ($ColorStart, $ColorFinish)
+	background-repeat: repeat-x
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$ColorStart", endColorstr="$ColorFinish")
+	background-image: -khtml-gradient(linear, left top, left bottom, from($ColorStart), to($ColorFinish))
+	background-image: -moz-linear-gradient(top, $ColorStart, $ColorFinish)
+	background-image: -ms-linear-gradient(top, $ColorStart, $ColorFinish)
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $ColorStart), color-stop(100%, $ColorFinish))
+	background-image: -webkit-linear-gradient(top, $ColorStart, $ColorFinish)
+	background-image: -o-linear-gradient(top, $ColorStart, $ColorFinish)
+	background-image: linear-gradient($ColorStart, $ColorFinish)
+
+
+
+// Border Radius
+@mixin border-radius ($ValueBdRadius)
+	-webkit-border-radius: $ValueBdRadius
+	-moz-border-radius: $ValueBdRadius
+	-ms-border-radius: $ValueBdRadius
+	-o-border-radius: $ValueBdRadius
+	border-radius: $ValueBdRadius
+
+// Border Radius Separate
+@mixin border-radius-sep ($BorderTL: 4px, $BorderTR: 4px, $BorderBL: 4px, $BorderBR: 4px)
+	-webkit-border-top-left-radius: $BorderTL
+	-moz-border-top-left-radius: $BorderTL
+	border-top-left-radius: $BorderTL
+
+	-webkit-border-top-right-radius: $BorderTR
+	-moz-border-top-right-radius: $BorderTR
+	border-top-right-radius: $BorderTR
+
+	-webkit-border-bottom-left-radius: $BorderBL
+	-moz-border-bottom-left-radius: $BorderBL
+	border-bottom-left-radius: $BorderBL
+
+	-webkit-border-bottom-right-radius: $BorderBR
+	-moz-border-bottom-right-radius: $BorderBR
+	border-bottom-right-radius: $BorderBR
+
+
+
+// Box sizing
+@mixin box-sizing ($ValueBSz)
+	-webkit-box-sizing: $ValueBSz
+	-moz-box-sizing: $ValueBSz
+	box-sizing: $ValueBSz
+
+
+// Box shadow
+@mixin box-shadow ($ValueSD)
+	-webkit-box-shadow: $ValueSD
+	-moz-box-shadow: $ValueSD
+	box-shadow: $ValueSD
+
+// Appearance
+@mixin appearance ($ValueAP)
+	-webkit-appearance: $ValueAP
+	-moz-appearance: $ValueAP
+	appearance: $ValueAP
+
+
+// Fonts
+// =============================
+
+// Font complete
+@mixin font-c ($Ffamily, $Fsize, $Fstyle, $Fvariant, $Fweight, $Fcolor)
+	font:
+		family: $Ffamily
+		size: $Fsize
+		style: $Fstyle
+		variant: $Fvariant
+		weight: $Fweight
+	color: $Fcolor
+
+// Font basic
+@mixin font-b ($Fsize, $Fweight, $Fcolor)
+	font: 
+		size: $Fsize
+		weight: $Fweight
+	color: $Fcolor
