@@ -1,3 +1,19 @@
+// ==========  Boxes  ==========
+
+// Box sizing
+@mixin box-sizing ($ValueBSz)
+	-webkit-box-sizing: $ValueBSz
+	-moz-box-sizing: $ValueBSz
+	box-sizing: $ValueBSz
+// Box shadow
+@mixin box-shadow ($ValueSD)
+	-webkit-box-shadow: $ValueSD
+	-moz-box-shadow: $ValueSD
+	box-shadow: $ValueSD
+
+
+// ==========  Gradients  ==========
+
 // Linear gradient
 @mixin linear-gradient ($ColorStart, $ColorFinish)
 	background-repeat: repeat-x
@@ -12,6 +28,8 @@
 
 
 
+// ==========  Borders  ==========
+
 // Border Radius
 @mixin border-radius ($ValueBdRadius)
 	-webkit-border-radius: $ValueBdRadius
@@ -25,33 +43,17 @@
 	-webkit-border-top-left-radius: $BorderTL
 	-moz-border-top-left-radius: $BorderTL
 	border-top-left-radius: $BorderTL
-
 	-webkit-border-top-right-radius: $BorderTR
 	-moz-border-top-right-radius: $BorderTR
 	border-top-right-radius: $BorderTR
-
 	-webkit-border-bottom-left-radius: $BorderBL
 	-moz-border-bottom-left-radius: $BorderBL
 	border-bottom-left-radius: $BorderBL
-
 	-webkit-border-bottom-right-radius: $BorderBR
 	-moz-border-bottom-right-radius: $BorderBR
 	border-bottom-right-radius: $BorderBR
 
 
-
-// Box sizing
-@mixin box-sizing ($ValueBSz)
-	-webkit-box-sizing: $ValueBSz
-	-moz-box-sizing: $ValueBSz
-	box-sizing: $ValueBSz
-
-
-// Box shadow
-@mixin box-shadow ($ValueSD)
-	-webkit-box-shadow: $ValueSD
-	-moz-box-shadow: $ValueSD
-	box-shadow: $ValueSD
 
 // Appearance
 @mixin appearance ($ValueAP)
@@ -60,19 +62,17 @@
 	appearance: $ValueAP
 
 
-// Fonts
-// =============================
+
+// ==========  Fonts  ==========
 
 // Font complete
-@mixin font-c ($Ffamily, $Fsize, $Fstyle, $Fvariant, $Fweight, $Fcolor)
+@mixin font-c ($Ffamily, $Fsize, $Fstyle, $Fweight, $Fcolor)
 	font:
 		family: $Ffamily
 		size: $Fsize
 		style: $Fstyle
-		variant: $Fvariant
 		weight: $Fweight
 	color: $Fcolor
-
 // Font basic
 @mixin font-b ($Fsize, $Fweight, $Fcolor)
 	font: 
