@@ -17,7 +17,6 @@
 // Linear gradient
 @mixin linear-gradient ($ColorStart, $ColorFinish)
 	background-repeat: repeat-x
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="'$ColorStart'", endColorstr="$ColorFinish")
 	background-image: -khtml-gradient(linear, left top, left bottom, from($ColorStart), to($ColorFinish))
 	background-image: -moz-linear-gradient(top, $ColorStart, $ColorFinish)
 	background-image: -ms-linear-gradient(top, $ColorStart, $ColorFinish)
