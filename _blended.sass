@@ -12,6 +12,15 @@
 	box-shadow: $ValueSD
 
 
+// ==========  Multiple Columns  ==========
+@mixin mult-columm ($count, $gap)
+	-moz-column-count: $count
+	-webkit-column-count: $count
+	column-count: $count
+	-moz-column-gap: $gap
+	-webkit-column-gap: $gap
+	column-gap: $gap
+
 // ==========  Gradients  ==========
 
 // Linear gradient
@@ -43,6 +52,18 @@
 	-webkit-appearance: $ValueAP
 	-moz-appearance: $ValueAP
 	appearance: $ValueAP
+
+
+// ==========  Transition  ==========
+
+@mixin trans-bg ($Duration, $Direction)
+	-webkit-transition: background-color $Duration $Direction
+	-moz-transition: background-color $Duration $Direction
+	-ms-transition: background-color $Duration $Direction
+	-o-transition: background-color $Duration $Direction
+	transition: background-color $Duration $Direction
+
+
 
 
 // ==========  Fonts  ==========
