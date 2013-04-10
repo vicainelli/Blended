@@ -12,6 +12,20 @@
 	box-shadow: $ValueSD
 
 
+
+// Width Calc
+@mixin w-calc ( $Value )
+	width: -webkit-calc(100% - $Value)
+	width: -moz-calc(100% - $Value)
+	width: calc(100% - $Value)
+
+// Height Calc
+@mixin h-calc ( $Value )
+	height: -webkit-calc(100% - $Value)
+	height: -moz-calc(100% - $Value)
+	height: calc(100% - $Value)
+
+
 // ==========  Multiple Columns  ==========
 @mixin mult-columm ($count, $gap)
 	-moz-column-count: $count
